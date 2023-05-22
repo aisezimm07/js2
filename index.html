@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Определение наименьшего числа</title>
+  <script>
+    function findSmallestNumber() {
+      let number1 = prompt("Введите первое число:");
+      let number2 = prompt("Введите второе число:");
+      let number3 = prompt("Введите третье число:");
+      number1 = Number(number1); 
+      number2 = Number(number2);
+      number3 = Number(number3);
+        if (number1 <= number2 && number1 <= number3) {
+          smallestNumber = number1;
+        } else if (number2 <= number1 && number2 <= number3) {
+          smallestNumber = number2;
+        } else {
+          smallestNumber = number3;
+        }
+        alert("Наименьшее число: " + smallestNumber);
+      }
+  </script>
+</head>
+<body>
+  <button onclick="findSmallestNumber()">Найти наименьшее число</button>
+</body>
+</html>
